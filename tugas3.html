@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>addingtwonumbers</title>
-    <script>
-        function addNum() {
-                var val1 = parseInt(document.getElementById)("value1").value;
-                var val2 = parseInt(document.getElementById)("value2").value;
-                var ansD value = document.getElementById("answer").value;
-                ansD.value = val1+val2;
-        }
-    </script>
- <style>
-        #div{
-            margin-left: 50%;
-        }
-    </style>
+    <title>adding twonumber</title>
 </head>
 <body>
-    <div id="div">
-        first number : <input type="text" name="value1" value="" id="value1">
-        <br><br>
-        second number : <input type="text" name="value2" value="" id="value2">
-        <br><br>
-    <input type="button" value="add" name="submit" onclick="addNum()">
-        <br><br>
-        answer : <input type="text" id="answer" name="answer" value="">
-    </div>
+
+    <style>
+        h1 {
+    color: blue;
+        }
+        .judul {
+            text-align: center;
+            color: rgb(0, 40, 100);
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #konten{
+color: rgb(229, 255, 0);
+font-size: 14px;
+font-weight: 500;
+}
+    </style>
+<h1>Number Sederhana</h1>
+
+
+<b style="color: red; font-weight: bold; font-family: 'Courier New', Courier, monospace;">JavaScript Aritmatika</b>
+<br>
+<button onclick="hitung('20')">20</button>
+<button onclick="hitung('+')">+</button>
+<button onclick="hitung('40')">40</button>
+<button onclick="hitung('x')">x</button>
+<button onclick="hitung('60')">60</button>
+<button onclick="hitung('=')">=</button>
+<p id="hasil"></P>
+
+<script>
+ document.getElementById("hasil").innerHTML = 20+40*60;
+</script>
+
 </body>
 </html>
